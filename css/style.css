@@ -1,0 +1,187 @@
+/* style.css */
+
+/* Imported font (requirement) */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+/* Theme tokens */
+:root {
+  --bg: #0b1020;
+  --panel: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.15);
+  --text: #e9edf6;
+  --muted: rgba(233, 237, 246, 0.82);
+  --accent: #e35335;
+  --maxw: 60rem; /* fixed maximum content width */
+}
+
+/* ===== Shared styles on all pages (5+ same elements) ===== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* browser-native font (requirement) */
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* wrapper used on every page */
+.page {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* headings share imported font */
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif; /* imported font */
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 1.25rem 0 0.5rem 0;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin: 1rem 0 0.25rem 0;
+}
+
+/* shared paragraph spacing */
+p {
+  margin: 0.8rem 0;
+  color: var(--muted);
+}
+
+/* shared fluid images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* shared footer style */
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 0.12rem solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ===== Centered horizontal navigation (requirement) ===== */
+nav ul {
+  list-style: none;               /* shared element */
+  display: flex;                  /* centered nav */
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(17, 26, 51, 0.95);
+  border-bottom: 0.12rem solid var(--border);
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 0.9rem;
+  border: 0.12rem solid var(--border);
+  color: var(--text);
+  text-decoration: none;          /* shared element */
+}
+
+nav a:hover {
+  border-color: var(--accent);
+}
+
+/* ===== Shared “card” look for featured blocks ===== */
+.hero {
+  background: var(--panel);
+  border: 0.12rem solid var(--border);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+}
+
+/* Make lists readable */
+ul {
+  margin: 0.75rem 0 0.75rem 1.25rem;
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+/* ===== Page-specific styles (5+ different per page) ===== */
+
+/* HOME: fluid layout emphasis */
+body.home .page {
+  width: 92%;
+  max-width: var(--maxw);
+}
+
+body.home h1 {
+  color: var(--accent);
+}
+
+body.home .hero {
+  border-left: 0.35rem solid var(--accent);
+}
+
+body.home p strong {
+  color: var(--accent);
+}
+
+/* TOPIC: media styling */
+body.topic audio {
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+body.topic .hero {
+  border-radius: 0.75rem;
+}
+
+body.topic h2 {
+  color: rgba(233, 237, 246, 0.95);
+}
+
+/* RESUME: fixed width layout requirement */
+body.resume .page {
+  width: 48rem;     /* fixed page layout area */
+  max-width: 100%;
+}
+
+body.resume h1 {
+  color: rgba(233, 237, 246, 0.98);
+}
+
+body.resume ul {
+  background: var(--panel);
+  border: 0.12rem solid var(--border);
+  padding: 0.9rem 1.25rem;
+}
+
+/* Responsive handling (still relative units) */
+@media (max-width: 40rem) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .page {
+    padding: 1rem;
+  }
+}
