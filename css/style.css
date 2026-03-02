@@ -185,3 +185,51 @@ body.resume ul {
     padding: 1rem;
   }
 }
+
+/* Media Query 1: Mobile */
+@media (max-width: 40rem) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 90%;
+    text-align: center;
+  }
+
+  .page {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+/* Media Query 2: Large screens */
+@media (min-width: 70rem) {
+  .page {
+    max-width: 72rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+}
+
+nav a.onpage {
+  border-color: var(--accent);
+}
+
+/* Back-to-top button */
+#back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.6rem 0.9rem;
+  border: 0.12rem solid var(--border);
+  background: rgba(17, 26, 51, 0.95);
+  color: var(--text);
+}
