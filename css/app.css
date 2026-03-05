@@ -1,0 +1,102 @@
+/* --------------------------------------------------
+   Project 4 – Foundation Resume Styling
+   Andres Felipe Lopez Lozano
+-------------------------------------------------- */
+
+/* Base page styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Main container spacing */
+.grid-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #222222;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1 {
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin-top: 30px;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+/* Resume lists */
+ul {
+  margin-left: 20px;
+}
+
+/* Hero image styling */
+.hero {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hero img {
+  max-width: 300px;
+  height: auto;
+}
+
+.hero figcaption {
+  font-size: 0.9em;
+  color: #777777;
+  margin-top: 5px;
+}
+
+/* Contact section */
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666666;
+}

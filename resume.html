@@ -3,87 +3,159 @@
 <head>
   <meta charset="utf-8">
   <title>Resume - Andres Felipe Lopez Lozano</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Project 2 CSS files -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Foundation CSS -->
+  <link rel="stylesheet" href="css/foundation.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/app.css">
 </head>
-<body class="resume">
-  <nav>
-    <ul>
-      <li><a href="index.html">index.html</a></li>
-      <li><a href="resume.html">resume.html</a></li>
-      <li><a href="topic.html">topic.html</a></li>
-      <li><a href="map.html">map.html</a></li>
-    </ul>
-  </nav>
 
-  <div class="page">
+<body>
 
-    <h1>Andres Felipe Lopez Lozano</h1>
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="topic.html">Topic</a></li>
+    <li><a href="map.html">Map</a></li>
+  </ul>
+</nav>
 
-    <p>Data and Analytics Professional, Software Developer, Applied AI Graduate Student</p>
+<!-- Foundation container -->
+<div class="grid-container">
 
-    <h2>Summary</h2>
-    <p>
-      I build data products and software tools that help teams measure performance, automate reporting,
-      and generate insights. I focus on clean implementation, clear documentation, and practical results.
-    </p>
-
-    <h2>Skills</h2>
-    <ul>
-      <li>SQL and data modeling</li>
-      <li>Python for analysis and automation</li>
-      <li>Dashboards and reporting</li>
-      <li>APIs and data extraction</li>
-      <li>Version control with Git</li>
-    </ul>
-
-    <h2>Experience highlights</h2>
-    <h3>Analytics and measurement</h3>
-    <ul>
-      <li>Designed measurement plans and KPI definitions aligned with business goals.</li>
-      <li>Built dashboards for performance reporting and stakeholder updates.</li>
-      <li>Investigated data quality issues and standardized event tracking.</li>
-      <li>Experience documenting technical systems for long-term maintenance.</li>
-    </ul>
-
-    <h3>Data engineering and automation</h3>
-    <ul>
-      <li>Created repeatable pipelines to extract, transform, and load data into reporting systems.</li>
-      <li>Automated manual processes using scripts and scheduled workflows.</li>
-      <li>Documented data flows so other team members could maintain them.</li>
-    </ul>
-
-    <h2>Education</h2>
-    <ul>
-      <li>Master’s studies in Applied Artificial Intelligence</li>
-      <li>Web development coursework focused on modern HTML standards</li>
-    </ul>
-
-    <h2>Projects</h2>
-    <p>
-      I build projects that combine analytics, automation, and software development. This website is an
-      example of clean multi-page HTML structure without styling.
-    </p>
-
-    <figure class="hero">
-      <img src="media/images/kindpng_102160.png" alt="Saint Seiya related image used on the resume page">
-      <figcaption>Resume page image for Project One.</figcaption>
-    </figure>
-
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: alopezlozano@hawk.illinoistech.edu</li>
-      <li>GitHub: WiseCat-Git</li>
-      <li>Location: Colombia</li>
-    </ul>
-
-    <footer>
-      <p>Project Two – Resume page.</p>
-    </footer>
-
+  <!-- Header -->
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <h1>Andres Felipe Lopez Lozano</h1>
+      <p>Data and Analytics Professional, Software Developer, Applied AI Graduate Student</p>
+    </div>
   </div>
-  <script src="js/script.js"></script>
+
+  <!-- Summary -->
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <h2>Summary</h2>
+      <p>
+        I build data products and software tools that help teams measure performance,
+        automate reporting, and generate insights. I focus on clean implementation,
+        clear documentation, and practical results.
+      </p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <h2>Skills</h2>
+    </div>
+
+    <div class="large-4 medium-6 cell">
+      <ul>
+        <li>SQL and data modeling</li>
+        <li>Python for analysis and automation</li>
+      </ul>
+    </div>
+
+    <div class="large-4 medium-6 cell">
+      <ul>
+        <li>Dashboards and reporting</li>
+        <li>APIs and data extraction</li>
+      </ul>
+    </div>
+
+    <div class="large-4 medium-12 cell">
+      <ul>
+        <li>Version control with Git</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <h2>Experience Highlights</h2>
+    </div>
+
+    <div class="large-6 cell">
+      <h3>Analytics and Measurement</h3>
+      <ul>
+        <li>Designed measurement plans and KPI definitions aligned with business goals.</li>
+        <li>Built dashboards for performance reporting and stakeholder updates.</li>
+        <li>Investigated data quality issues and standardized event tracking.</li>
+        <li>Experience documenting technical systems for long-term maintenance.</li>
+      </ul>
+    </div>
+
+    <div class="large-6 cell">
+      <h3>Data Engineering and Automation</h3>
+      <ul>
+        <li>Created repeatable pipelines to extract, transform, and load data into reporting systems.</li>
+        <li>Automated manual processes using scripts and scheduled workflows.</li>
+        <li>Documented data flows so other team members could maintain them.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <h2>Education</h2>
+      <ul>
+        <li>Master’s studies in Applied Artificial Intelligence</li>
+        <li>Web development coursework focused on modern HTML standards</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <h2>Projects</h2>
+      <p>
+        I build projects that combine analytics, automation, and software development.
+        This website is an example of clean multi-page HTML structure.
+      </p>
+
+      <figure class="hero">
+        <img src="media/images/kindpng_102160.png"
+             alt="Saint Seiya related image used on the resume page">
+        <figcaption>Resume page image for Project One.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: alopezlozano@hawk.illinoistech.edu</li>
+        <li>GitHub: WiseCat-Git</li>
+        <li>Location: Colombia</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <footer>
+        <p>Project Four – Foundation Framework Resume Page.</p>
+      </footer>
+    </div>
+  </div>
+
+</div>
+
+<!-- Foundation JS -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>
